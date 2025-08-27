@@ -1,0 +1,98 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 20px;
+  background-image: url("lake.png");
+}
+
+header {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+nav {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+}
+
+#content {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  font-size: large;
+}
+
+.name {
+  font-size: 50px;
+  text-align: center;
+}
+
+.desc {
+  font-size: 30px;
+  text-align: center;
+}
+
+.text, .loc {
+  color: rgb(10, 132, 254);
+  font-size: 20px;
+  text-align: center;
+}
+
+.text {
+  margin-top: 10px;
+}
+
+.blue {
+  border: 0;
+  line-height: 2.5;
+  padding: 0px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(30, 144, 255);
+  background-image: linear-gradient(to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      rgb(0 0 0 / 0));
+  box-shadow:
+    inset 1px 1px 1px rgb(255 255 255 / 0.6),
+    inset -1px -1px 1px rgb(0 0 0 / 0.6);
+}
+
+.blue:hover {
+  background-color: rgb(55, 154, 253);
+}
+
+.blue:active {
+  box-shadow:
+    inset -1px -1px 1px rgb(255 255 255 / 0.6),
+    inset 1px 1px 1px rgb(0 0 0 / 0.6);
+}
+
+/*
+.menu {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 48px;
+  row-gap: 28px;
+  margin: 48px;
+  background-color: aquamarine;
+}
+
+.dish {
+  font-size: 17px;
+  background-image: url("wraps1.jpg");
+  border-radius: 8px;
+  height: 700px;
+  width: 500px;
+  filter: drop-shadow(3px 3px 3px #777);
+}
+*/
